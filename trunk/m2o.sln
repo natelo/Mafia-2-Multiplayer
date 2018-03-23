@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2002
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Client.Core", "Client\Client.vcxproj", "{A3A3B8B8-9578-4B38-95C9-42A6B4D29A07}"
 EndProject
@@ -35,6 +35,12 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CEGUI - FalagardBase", "Libraries\cegui-0.4.0-custom\makefiles\win32\vs2015\WidgetSets\Falagard\Falagard.vcxproj", "{04E4A944-225A-4BFB-B7B5-F23AEE884989}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{7651EA89-4409-4751-ACB8-368F91E7D167}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Installer", "Installer", "{7A8F64AA-281B-4B8A-923C-4261BD6C9659}"
+	ProjectSection(SolutionItems) = preProject
+		Installer\m2mp_install.nsi = Installer\m2mp_install.nsi
+		Installer\m2mp_install_d.nsi = Installer\m2mp_install_d.nsi
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -99,5 +105,8 @@ Global
 		{7582B608-D92F-4FCB-B682-2214B48D1596} = {1CE1A1E4-2078-4DD4-9660-671EE8D01848}
 		{04E4A944-225A-4BFB-B7B5-F23AEE884989} = {1CE1A1E4-2078-4DD4-9660-671EE8D01848}
 		{7651EA89-4409-4751-ACB8-368F91E7D167} = {74D33BF4-EE0A-4D33-979C-5DB5304AB37C}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {545F7DF7-E7B1-4738-B93F-342766D25E72}
 	EndGlobalSection
 EndGlobal
