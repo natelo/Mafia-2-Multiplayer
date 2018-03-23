@@ -1,0 +1,13 @@
+﻿  CLogFile.cpp
+  CString.cpp
+  md5.cpp
+  CHttpClient.cpp
+  SharedUtility.cpp
+f:\library\sources\mafia2-online-master\shared\sharedutility.cpp(124): warning C4244: 'return': conversion from '__int64' to 'unsigned long', possible loss of data
+f:\library\sources\mafia2-online-master\shared\sharedutility.cpp(749): warning C4018: '<': signed/unsigned mismatch
+  CMutex.cpp
+  CThread.cpp
+  main.cpp
+  Generating code
+  Finished generating code
+  Client.Launcher.vcxproj -> F:\library\Sources\Mafia2-Online-master\Binary\Debug\m2online.exe

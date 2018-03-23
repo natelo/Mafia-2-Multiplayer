@@ -1,0 +1,6 @@
+﻿  ticpp.cpp
+  tinystr.cpp
+  tinyxml.cpp
+  tinyxmlerror.cpp
+  tinyxmlparser.cpp
+  tinyxml.vcxproj -> F:\library\Sources\Mafia2-Online-master\Libs\Debug\tinyxml_d.lib
