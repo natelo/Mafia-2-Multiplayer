@@ -77,7 +77,7 @@ LONG WINAPI ExceptionFilter(PEXCEPTION_POINTERS exceptionInfo)
 	if (!miniDumpWriteResult) {
 		char message[512] = { 0 };
 		sprintf(message, "Multiplayer mod has crashed. Unfortunately due to some problem the write of dump file failed, try running mod as administrator.\nIf it does not help please send bug report with screenshot of this dialog on http://bugs.mafia2-online.com\nError code: %X", lastError);
-		MessageBox(NULL, message, "Mafia2-Online has crashed!", MB_ICONERROR);
+		MessageBox(NULL, message, "M2:MP has crashed!", MB_ICONERROR);
 
 		CloseHandle(file);
 		return GetFilterReturnCode();
@@ -87,7 +87,7 @@ LONG WINAPI ExceptionFilter(PEXCEPTION_POINTERS exceptionInfo)
 
 	char message[512] = { 0 };
 	sprintf(message, "Multiplayer mod has crashed. This is serious problem mostly caused by some bug in the code.\nPlease report it on http://bugs.mafia2-online.com and attach this file:\n%s", exceptionSavePath);
-	MessageBox(NULL, message, "Mafia2-Online has crashed!", MB_ICONERROR);
+	MessageBox(NULL, message, "M2:MP has crashed!", MB_ICONERROR);
 
 	return GetFilterReturnCode();
 }

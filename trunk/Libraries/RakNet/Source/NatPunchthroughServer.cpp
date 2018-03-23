@@ -243,7 +243,7 @@ PluginReceiveResult NatPunchthroughServer::OnReceive(Packet *packet)
 			{
 				DataStructures::List<RakNetSocket2* > sockets;
 				rakPeerInterface->GetSockets(sockets);
-				for (int i=0; i < sockets.Size() && i < MAXIMUM_NUMBER_OF_INTERNAL_IDS; i++)
+				for (unsigned int i=0; i < sockets.Size() && i < MAXIMUM_NUMBER_OF_INTERNAL_IDS; i++)
 				{
 					boundAddresses[i]=sockets[i]->GetBoundAddress();
 					boundAddressCount++;
@@ -251,7 +251,7 @@ PluginReceiveResult NatPunchthroughServer::OnReceive(Packet *packet)
 			}
 
 			outgoingBs.Write(boundAddressCount);
-			for (int i=0; i < boundAddressCount; i++)
+			for (unsigned int i=0; i < boundAddressCount; i++)
 			{
 				outgoingBs.Write(boundAddresses[i]);
 			}

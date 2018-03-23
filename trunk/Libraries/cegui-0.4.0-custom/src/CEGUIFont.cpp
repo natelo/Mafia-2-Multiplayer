@@ -548,9 +548,9 @@ void Font::drawGlyphToBuffer(argb_t* buffer, uint buf_width)
 {
 	FT_Bitmap* glyph_bitmap = &d_impldat->fontFace->glyph->bitmap;
 
-	for (int i = 0; i < glyph_bitmap->rows; ++i)
+	for (unsigned int i = 0; i < glyph_bitmap->rows; ++i)
 	{
-		for (int j = 0; j < glyph_bitmap->width; ++j)
+		for (unsigned int j = 0; j < glyph_bitmap->width; ++j)
 		{
 			switch (glyph_bitmap->pixel_mode)
 			{
