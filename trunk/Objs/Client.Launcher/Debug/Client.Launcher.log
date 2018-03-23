@@ -1,0 +1,12 @@
+﻿  CLogFile.cpp
+  CString.cpp
+  md5.cpp
+  CHttpClient.cpp
+  SharedUtility.cpp
+d:\pub\r&r\mafia2\m2mp\shared\sharedutility.cpp(124): warning C4244: 'return': conversion from '__int64' to 'unsigned long', possible loss of data
+  CMutex.cpp
+  CThread.cpp
+  main.cpp
+  Generating code
+  Finished generating code
+  Client.Launcher.vcxproj -> D:\Pub\R&R\mafia2\m2mp\Binary\Debug\m2online.exe

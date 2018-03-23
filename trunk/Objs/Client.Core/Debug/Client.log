@@ -1,0 +1,206 @@
+﻿  sqapi.cpp
+  sqbaselib.cpp
+  sqclass.cpp
+  sqcompiler.cpp
+  sqdebug.cpp
+  sqfuncstate.cpp
+  sqlexer.cpp
+  sqmem.cpp
+  sqobject.cpp
+  sqstate.cpp
+  sqstdaux.cpp
+  sqstdblob.cpp
+  sqstdio.cpp
+  sqstdmath.cpp
+  sqstdrex.cpp
+  sqstdstream.cpp
+  sqstdstring.cpp
+  sqstdsystem.cpp
+  sqtable.cpp
+  sqvm.cpp
+  Generating Code...
+  Compiling...
+  CCommands.cpp
+  CEvents.cpp
+  CLogFile.cpp
+  CPatcher.cpp
+  CSettings.cpp
+  CString.cpp
+  CXML.cpp
+  CZlib.cpp
+  DbgView.cpp
+  CGame.cpp
+  md5.cpp
+  CHttpClient.cpp
+  CNetworkStats.cpp
+d:\pub\r&r\mafia2\m2mp\libraries\raknet\source\rpc4plugin.h(241): warning C4193: #pragma warning(pop): no matching '#pragma warning(push)'
+  CScriptingManager.cpp
+  CSquirrel.cpp
+  Macro defintion of max detected - undefining
+  Macro defintion of min detected - undefining
+  CSquirrelArguments.cpp
+  CSquirrelCommon.cpp
+  CAreaNatives.cpp
+  CBlipNatives.cpp
+  CEventNatives.cpp
+  Generating Code...
+  Compiling...
+  CHashNatives.cpp
+  CPedNatives.cpp
+  Macro defintion of min detected - undefining
+  CSharedPlayerNatives.cpp
+  CSharedVehicleNatives.cpp
+  Macro defintion of max detected - undefining
+  Macro defintion of min detected - undefining
+  CSystemNatives.cpp
+  Macro defintion of max detected - undefining
+  Macro defintion of min detected - undefining
+  CTimerNatives.cpp
+  Macro defintion of max detected - undefining
+  Macro defintion of min detected - undefining
+  CUtilNatives.cpp
+  Macro defintion of min detected - undefining
+  CXMLNatives.cpp
+  SharedUtility.cpp
+  Unicode.cpp
+  CMutex.cpp
+  CThread.cpp
+  CTimer.cpp
+  CTimerManager.cpp
+  C3DTextLabel.cpp
+  C3DTextLabelManager.cpp
+  C3DTextLabelNatives.cpp
+  CAudio.cpp
+  CAudioManager.cpp
+  CAudioNatives.cpp
+  Generating Code...
+  Compiling...
+  CBlip.cpp
+  CBlipManager.cpp
+  CBlipRPC.cpp
+d:\pub\r&r\mafia2\m2mp\libraries\raknet\source\rpc4plugin.h(241): warning C4193: #pragma warning(pop): no matching '#pragma warning(push)'
+  CCameraNatives.cpp
+  CClientNatives.cpp
+  CClientScriptGUIManager.cpp
+  CClientScriptingManager.cpp
+  CCore.cpp
+  CDirect3D9Hook.cpp
+  CDirect3D9Proxy.cpp
+  CDirect3DDevice9Proxy.cpp
+  CDirectInput8Hook.cpp
+  CDirectInput8Proxy.cpp
+  CDirectInputDevice8Proxy.cpp
+  CDoorManager.cpp
+  CDownloadProgress.cpp
+  CFileTransfer.cpp
+  CFileTransferManager.cpp
+  CFont.cpp
+  CFPSCounter.cpp
+  Generating Code...
+  Compiling...
+  CIcon.cpp
+  CMafia.cpp
+  CGameFiles.cpp
+  CGameNatives.cpp
+  CGraphics.cpp
+  CGUI.cpp
+  CGUINatives.cpp
+  CIE.cpp
+  CKeyBinds.cpp
+  CLoadingScreen.cpp
+  CLocalPlayer.cpp
+  CLua.cpp
+  CM2Camera.cpp
+  CM2EntityMessage.cpp
+  CM2Hud.cpp
+  CM2PhysFS.cpp
+  CM2PhysFSFile.cpp
+  CM2SyncObject.cpp
+  CM2VideoSettings.cpp
+  CMainMenu.cpp
+  Generating Code...
+  Compiling...
+  CMasterList.cpp
+  CMasterList.cpp - Use [slash]n in the masterlist instead of <br /> for lower data usage!
+  CMenuSettings.cpp
+  CModelManager.cpp
+  CNameTag.cpp
+  Macro defintion of max detected - undefining
+  Macro defintion of min detected - undefining
+  CNetworkModelManager.cpp
+  CNetworkModule.cpp
+  CNetworkPlayer.cpp
+  CNetworkRPC.cpp
+  CNetworkVehicle.cpp
+  COffsets.cpp
+  CPatches.cpp
+  CPed.cpp
+  CPedManager.cpp
+  CPlayerManager.cpp
+  CPlayerNatives.cpp
+  CPlayerRPC.cpp
+d:\pub\r&r\mafia2\m2mp\libraries\raknet\source\rpc4plugin.h(241): warning C4193: #pragma warning(pop): no matching '#pragma warning(push)'
+  CRemotePlayer.cpp
+  CScreenShot.cpp
+  CScriptingRPC.cpp
+d:\pub\r&r\mafia2\m2mp\libraries\raknet\source\rpc4plugin.h(241): warning C4193: #pragma warning(pop): no matching '#pragma warning(push)'
+d:\pub\r&r\mafia2\m2mp\libraries\raknet\source\rpc4plugin.h(241): warning C4193: #pragma warning(pop): no matching '#pragma warning(push)'
+  CServerPassword.cpp
+  Generating Code...
+  Compiling...
+  CServerQuery.cpp
+  CStreamableEntity.cpp
+  CStreamer.cpp
+  CVehicleRPC.cpp
+  CServerBrowser.cpp
+  CServerList.cpp
+  CVehicleManager.cpp
+  CWindowSubclass.cpp
+  CGraphicsNatives.cpp
+  CM2Core.cpp
+  CM2Door.cpp
+  CM2Entity.cpp
+  CM2Misc.cpp
+  CM2ModelManager.cpp
+  CM2Navigation.cpp
+  CM2ObjectTable.cpp
+  CM2Ped.cpp
+  CM2TextDatabase.cpp
+  CM2Vehicle.cpp
+  CM2SlotManager.cpp
+  Generating Code...
+  Compiling...
+  ExceptionHandler.cpp
+c:\program files (x86)\windows kits\8.1\include\um\dbghelp.h(1544): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+c:\program files (x86)\windows kits\8.1\include\um\dbghelp.h(3190): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+  ChatBox.cpp
+  CGUIButton_Impl.cpp
+  CGUICheckBox_Impl.cpp
+  CGUIComboBox_Impl.cpp
+  CGUIEdit_Impl.cpp
+  CGUIElement_Impl.cpp
+  CGUIFont_Impl.cpp
+  CGUIGridList_Impl.cpp
+  CGUILabel_Impl.cpp
+  CGUIListItem_Impl.cpp
+  CGUIMessageBox_Impl.cpp
+  CGUIProgressBar_Impl.cpp
+  CGUIRadioButton_Impl.cpp
+  CGUIScrollBar_Impl.cpp
+  CGUIScrollPane_Impl.cpp
+  CGUIStaticImage_Impl.cpp
+  CGUITabPanel_Impl.cpp
+  CGUITab_Impl.cpp
+  CGUITexture_Impl.cpp
+  Generating Code...
+  Compiling...
+  CGUIWindow_Impl.cpp
+  CGUI_Impl.cpp
+  Main.cpp
+  Generating Code...
+  tinyxml_d.lib(tinyxml.obj) : MSIL .netmodule or module compiled with /GL found; restarting link with /LTCG; add /LTCG to the link command line to improve linker performance
+  Generating code
+  Finished generating code
+detours.lib(detours.obj) : warning LNK4099: PDB 'detours.pdb' was not found with 'detours.lib(detours.obj)' or at 'D:\Pub\R&R\mafia2\m2mp\Binary\Debug\detours.pdb'; linking object as if no debug info
+detours.lib(disasm.obj) : warning LNK4099: PDB 'detours.pdb' was not found with 'detours.lib(disasm.obj)' or at 'D:\Pub\R&R\mafia2\m2mp\Binary\Debug\detours.pdb'; linking object as if no debug info
+  Client.vcxproj -> D:\Pub\R&R\mafia2\m2mp\Binary\Debug\m2online.dll

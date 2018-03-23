@@ -1,0 +1,7 @@
+﻿  CNetworkPlayer.cpp
+RakNetStatic_d.lib(RakNetTypes.obj) : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/SAFESEH' specification
+  tinyxml_d.lib(tinyxml.obj) : MSIL .netmodule or module compiled with /GL found; restarting link with /LTCG; add /LTCG to the link command line to improve linker performance
+RakNetStatic_d.lib(RakNetTypes.obj) : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/SAFESEH' specification
+  Generating code
+  Finished generating code
+  Server.vcxproj -> D:\Pub\R&R\mafia2\m2mp\Binary\Debug\m2online-svr.exe

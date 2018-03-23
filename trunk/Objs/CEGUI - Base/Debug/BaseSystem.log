@@ -1,0 +1,172 @@
+﻿  StdInc.cpp
+  CEGUIBase.cpp
+  CEGUIcolour.cpp
+  CEGUIColourRect.cpp
+  CEGUIConfig_xmlHandler.cpp
+  CEGUIDefaultResourceProvider.cpp
+d:\pub\r&r\mafia2\m2mp\libraries\cegui-0.4.0-custom\src\ceguidefaultresourceprovider.cpp(68): warning C4244: 'initializing': conversion from 'std::streamoff' to 'unsigned int', possible loss of data
+d:\pub\r&r\mafia2\m2mp\libraries\cegui-0.4.0-custom\src\ceguidefaultresourceprovider.cpp(83): warning C4244: 'argument': conversion from 'std::streamoff' to '::size_t', possible loss of data
+  CEGUIEvent.cpp
+  CEGUIEventArgs.cpp
+  CEGUIEventSet.cpp
+  CEGUIExceptions.cpp
+  CEGUIFactoryModule.cpp
+  CEGUIFont.cpp
+  CEGUIFont_xmlHandler.cpp
+  CEGUIFontManager.cpp
+  CEGUIGlobalEventSet.cpp
+  CEGUIGUILayout_xmlHandler.cpp
+  CEGUIImage.cpp
+  CEGUIImageset.cpp
+  CEGUIImageset_xmlHandler.cpp
+  CEGUIImagesetManager.cpp
+  CEGUILogger.cpp
+  Generating Code...
+  Compiling...
+  CEGUIMouseCursor.cpp
+  CEGUIProperty.cpp
+  CEGUIPropertyHelper.cpp
+  CEGUIPropertySet.cpp
+  CEGUIRect.cpp
+  CEGUIRefPtr.cpp
+  CEGUIRenderableElement.cpp
+  CEGUIRenderableFrame.cpp
+  CEGUIRenderableImage.cpp
+  CEGUIRenderCache.cpp
+  CEGUIRenderer.cpp
+  CEGUIScheme.cpp
+  CEGUIScheme_xmlHandler.cpp
+  CEGUISchemeManager.cpp
+  CEGUIScriptModule.cpp
+  CEGUISize.cpp
+  CEGUIString.cpp
+  CEGUISystem.cpp
+  CEGUITexture.cpp
+  CEGUITextUtils.cpp
+  Generating Code...
+  Compiling...
+  CEGUIVector.cpp
+  CEGUIWin32XMLSelectHack.cpp
+  CEGUIWindow.cpp
+  CEGUIWindowFactory.cpp
+  CEGUIWindowFactoryManager.cpp
+  CEGUIWindowManager.cpp
+  CEGUIWindowProperties.cpp
+  CEGUIXMLAttributes.cpp
+  CEGUIXMLHandler.cpp
+  CEGUIXMLParser.cpp
+  CEGUIFalagard_xmlHandler.cpp
+  CEGUIFalComponentBase.cpp
+  CEGUIFalDimensions.cpp
+  CEGUIFalFrameComponent.cpp
+  CEGUIFalImageryComponent.cpp
+  CEGUIFalImagerySection.cpp
+  CEGUIFalLayerSpecification.cpp
+  CEGUIFalNamedArea.cpp
+  CEGUIFalPropertyDefinition.cpp
+  CEGUIFalPropertyInitialiser.cpp
+  Generating Code...
+  Compiling...
+  CEGUIFalSectionSpecification.cpp
+  CEGUIFalStateImagery.cpp
+  CEGUIFalTextComponent.cpp
+  CEGUIFalWidgetComponent.cpp
+  CEGUIFalWidgetLookFeel.cpp
+  CEGUIFalWidgetLookManager.cpp
+  CEGUIFalXMLEnumHelper.cpp
+  CEGUIButtonBase.cpp
+  CEGUIButtonBaseProperties.cpp
+  CEGUICheckbox.cpp
+  CEGUICheckboxProperties.cpp
+  CEGUICombobox.cpp
+  CEGUIComboboxProperties.cpp
+  CEGUIComboDropList.cpp
+  CEGUIDragContainer.cpp
+  CEGUIDragContainerProperties.cpp
+  CEGUIEditbox.cpp
+  CEGUIEditboxProperties.cpp
+  CEGUIFrameWindow.cpp
+  CEGUIFrameWindowProperties.cpp
+  Generating Code...
+  Compiling...
+  CEGUIGUISheet.cpp
+  CEGUIItemEntry.cpp
+  CEGUIItemListBase.cpp
+  CEGUIItemListBaseProperties.cpp
+  CEGUIListbox.cpp
+  CEGUIListboxImageItem.cpp
+  CEGUIListboxItem.cpp
+  CEGUIListboxNumberItem.cpp
+  CEGUIListboxProperties.cpp
+  CEGUIListboxTextItem.cpp
+  CEGUIListHeader.cpp
+  CEGUIListHeaderProperties.cpp
+  CEGUIListHeaderSegment.cpp
+  CEGUIListHeaderSegmentProperties.cpp
+  CEGUIMenubar.cpp
+  CEGUIMenuBase.cpp
+  CEGUIMenuBaseProperties.cpp
+  CEGUIMenuItem.cpp
+  CEGUIMenuItemProperties.cpp
+  CEGUIMultiColumnList.cpp
+  Generating Code...
+  Compiling...
+  CEGUIMultiColumnListProperties.cpp
+  CEGUIMultiLineEditbox.cpp
+  CEGUIMultiLineEditboxProperties.cpp
+  CEGUIPopupMenu.cpp
+  CEGUIPopupMenuProperties.cpp
+  CEGUIProgressBar.cpp
+  CEGUIProgressBarProperties.cpp
+  CEGUIPushButton.cpp
+  CEGUIPushButtonProperties.cpp
+  CEGUIRadioButton.cpp
+  CEGUIRadioButtonProperties.cpp
+  CEGUIScrollablePane.cpp
+  CEGUIScrollablePaneProperties.cpp
+  CEGUIScrollbar.cpp
+  CEGUIScrollbarProperties.cpp
+  CEGUIScrolledContainer.cpp
+  CEGUIScrolledContainerProperties.cpp
+  CEGUISlider.cpp
+  CEGUISliderProperties.cpp
+  CEGUISpinner.cpp
+  Generating Code...
+  Compiling...
+  CEGUISpinnerProperties.cpp
+  CEGUIStatic.cpp
+  CEGUIStaticImage.cpp
+  CEGUIStaticImageProperties.cpp
+  CEGUIStaticProperties.cpp
+  CEGUIStaticText.cpp
+  CEGUIStaticTextProperties.cpp
+  CEGUITabButton.cpp
+  CEGUITabControl.cpp
+  CEGUITabControlProperties.cpp
+  CEGUITextItem.cpp
+  CEGUITextItemProperties.cpp
+  CEGUIThumb.cpp
+  CEGUIThumbProperties.cpp
+  CEGUITitlebar.cpp
+  CEGUITitlebarProperties.cpp
+  CEGUITooltip.cpp
+  CEGUITooltipProperties.cpp
+  Generating Code...
+  chartables.c
+  get.c
+  maketables.c
+  pcre.c
+  pcreposix.c
+  study.c
+  Generating Code...
+  tinystr.cpp
+  tinyxml.cpp
+  tinyxmlerror.cpp
+  tinyxmlparser.cpp
+  Generating Code...
+CEGUIWindowFactory.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+CEGUIVector.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+CEGUITexture.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+CEGUIEventArgs.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+CEGUIBase.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+  BaseSystem.vcxproj -> D:\Pub\R&R\mafia2\m2mp\Libs\Debug\CEGUI - Base.lib

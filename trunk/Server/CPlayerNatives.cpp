@@ -537,7 +537,7 @@ SQInteger CPlayerNatives::RemoveWeapon( SQVM * pVM )
 	// Is the player active?
 	if( CCore::Instance()->GetPlayerManager()->IsActive( playerId ) )
 	{
-		// Remvoe the weapon
+		// Remove the weapon
 		CCore::Instance()->GetPlayerManager()->Get( playerId )->RemoveWeapon ( iWeapon, iAmmo );
 
 		sq_pushbool( pVM, true );
