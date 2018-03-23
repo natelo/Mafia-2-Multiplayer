@@ -746,7 +746,7 @@ namespace SharedUtility
 		srand ( GetTime () );
 
 		// Appand a new character to cover the length
-		for ( int i = 0; i < uiLength; i ++ )
+		for ( unsigned int i = 0; i < uiLength; i ++ )
 			strResult.Append  ( charset[ rand() % sizeof ( charset ) - 1 ] );
 
 		return strResult;
