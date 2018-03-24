@@ -216,6 +216,10 @@ int main( int argc, char * argv[] )
 
 	m_ulStartTime = SharedUtility::GetTime();
 
+#ifdef WIN32
+	SetConsoleCtrlHandler(CtrlHandler, TRUE);
+#endif
+
 	while (pCore->IsActive())
 	{
 		pCore->Pulse();
@@ -235,10 +239,6 @@ int main( int argc, char * argv[] )
 			}
 			m_inputMutex.unlock();
 		}
-
-#ifdef WIN32
-		SetConsoleCtrlHandler(CtrlHandler, TRUE);
-#endif
 
 		Sleep(5);
 	}
