@@ -3,10 +3,10 @@
 
 !define MUI_ABORTWARNING
 
-!define MOD_NAME	"Mafia2-Online"
+!define MOD_NAME	"Mafia2:MultiPlayer"
 !define	MOD_VERS	"v0.1 RC4 "
-!define MOD_NAME_S	"M2Online"
-!define MOD_OUTPUT	"m2online-01-rc4.exe"
+!define MOD_NAME_S	"M2:MP"
+!define MOD_OUTPUT	"m2mp-01-rc4.exe"
 !define REG_NODE	"SOFTWARE\Wow6432Node\${MOD_NAME}"
 !define MOD_DIR 	"$PROGRAMFILES\${MOD_NAME}"
 
@@ -121,8 +121,8 @@ Section "Install"
 	CreateDirectory "$MODDIR\screenshots"
 
 	SetOutPath "$MODDIR"
-	File ..\Binary\release\m2online.exe
-	File ..\Binary\release\m2online.dll
+	File ..\Binary\release\m2mp.exe
+	File ..\Binary\release\m2mp.dll
 	File ..\Binary\bass.dll
 
 	SetOutPath "$MODDIR\data\game"
@@ -181,11 +181,11 @@ Section "Install"
 
 	# Create the desktop shortcut
 	SetOutPath "$MODDIR"
-	CreateShortCut "$DESKTOP\${MOD_NAME}.lnk" "$MODDIR\m2online.exe"
+	CreateShortCut "$DESKTOP\${MOD_NAME}.lnk" "$MODDIR\m2mp.exe"
 
 	# Create the start menu shortcuts
 	CreateDirectory "$SMPROGRAMS\${MOD_NAME}"
-	CreateShortCut "$SMPROGRAMS\${MOD_NAME}\${MOD_NAME}.lnk" "$MODDIR\m2online.exe"
+	CreateShortCut "$SMPROGRAMS\${MOD_NAME}\${MOD_NAME}.lnk" "$MODDIR\m2mp.exe"
 	CreateShortCut "$SMPROGRAMS\${MOD_NAME}\Uninstall.lnk" "$MODDIR\Uninstall.exe"
 
 	# Write the registry keys
@@ -195,10 +195,10 @@ Section "Install"
 	WriteRegStr HKLM "${REG_NODE}" "Version" "${MOD_VERS}"
 
 	# Write the URI scheme
-	WriteRegStr HKCR "m2online" "" "Mafia2-Online Protocol"
-	WriteRegStr HKCR "m2online" "URL Protocol" ""
-	WriteRegStr HKCR "m2online\DefaultIcon" "" "$\"$MODDIR\m2online.exe$\",1"
-	WriteRegStr HKCR "m2online\shell\open\command" "" "$\"$MODDIR\m2online.exe$\" $\"-uri %1$\""
+	WriteRegStr HKCR "m2" "" "Mafia2-Online Protocol"
+	WriteRegStr HKCR "m2mp" "URL Protocol" ""
+	WriteRegStr HKCR "m2mp\DefaultIcon" "" "$\"$MODDIR\m2mp.exe$\",1"
+	WriteRegStr HKCR "m2mp\shell\open\command" "" "$\"$MODDIR\m2mp.exe$\" $\"-uri %1$\""
 
 SectionEnd
 

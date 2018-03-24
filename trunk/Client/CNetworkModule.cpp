@@ -201,7 +201,7 @@ void CNetworkModule::DoDisconnect( bool bRestart )
 		Startup();
 
 		// Reset default server info
-		CCore::Instance()->SetServerName( "M2Online Server" );
+		CCore::Instance()->SetServerName( "M2:MP" );
 		CCore::Instance()->SetServerMaxPlayers( 0 );
 
 		// Clear the chat

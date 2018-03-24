@@ -33,16 +33,18 @@
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="PropertySheet.props" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="PropertySheet.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <OutDir>$(SolutionDir)Binary\$(Configuration)\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <TargetName>m2online-svr</TargetName>
+    <TargetName>$(SolutionName)_ded</TargetName>
     <LibraryPath>$(LibraryPath)</LibraryPath>
     <IntDir>$(SolutionDir)Objs\$(ProjectName)\$(Configuration)\</IntDir>
   </PropertyGroup>
@@ -50,7 +52,7 @@
     <OutDir>$(SolutionDir)Binary\$(Configuration)\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <TargetName>m2online-svr</TargetName>
+    <TargetName>$(SolutionName)_ded</TargetName>
     <LibraryPath>$(LibraryPath)</LibraryPath>
     <IntDir>$(SolutionDir)Objs\$(ProjectName)\$(Configuration)\</IntDir>
   </PropertyGroup>
@@ -70,6 +72,10 @@
       <SubSystem>NotSet</SubSystem>
       <MinimumRequiredVersion />
     </Link>
+    <PostBuildEvent>
+      <Command>copy /Y "$(SolutionDir)Binary\$(Configuration)\$(TargetName)$(TargetExt)" "$(GAME_SERVER_INSTALL_DIR)"
+copy /Y "$(SolutionDir)Binary\$(Configuration)\$(TargetName).pdb" "$(GAME_SERVER_INSTALL_DIR)"</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -92,6 +98,9 @@
       <SubSystem>NotSet</SubSystem>
       <MinimumRequiredVersion />
     </Link>
+    <PostBuildEvent>
+      <Command>copy /Y "$(SolutionDir)Binary\$(Configuration)\$(TargetName)$(TargetExt)" "$(GAME_SERVER_INSTALL_DIR)"</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\Libraries\mongoose\mongoose.c" />

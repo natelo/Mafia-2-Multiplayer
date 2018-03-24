@@ -62,7 +62,7 @@ bool CServerListItem::Query ( void )
 		ioctlsocket ( m_iSocket, FIONBIO, &flag );
 	}
 
-	int sentChars = sendto(m_iSocket, "M2Online", 8, 0, (sockaddr *)&addr, sizeof(addr));
+	int sentChars = sendto(m_iSocket, "M2:MP", 8, 0, (sockaddr *)&addr, sizeof(addr));
 	if ( sentChars == 8 )
 	{
 		ulQueryStart = SharedUtility::GetTime ();
@@ -75,7 +75,7 @@ bool CServerListItem::Query ( void )
 bool CServerListItem::Parse( const char * szBuffer, unsigned int uiLength )
 {
 	// Check the header
-	if( strncmp( szBuffer, "M2Online", 8 ) != 0 )
+	if( strncmp( szBuffer, "M2:MP", 8 ) != 0 )
 		return false;
 
 	// Calculate the ping

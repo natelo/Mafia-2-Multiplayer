@@ -14,9 +14,9 @@
 #pragma comment(linker,"/manifestdependency:\"type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' processorArchitecture='*' publicKeyToken='6595b64144ccf1df' language='*'\"")
 
 #ifdef _DEBUG
-#define CORE_MODULE	"m2online.dll"
+#define CORE_MODULE	"m2mp.dll"
 #else
-#define	CORE_MODULE	"m2online.dll"
+#define	CORE_MODULE	"m2mp.dll"
 #endif
 
 #define BASS_MODULE "bass.dll"
@@ -85,11 +85,11 @@ int WINAPI WinMain( HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLin
 
 	String strModulePath;
 	strModulePath.Format( "%s%s", SharedUtility::GetAppPath(), CORE_MODULE );
-	CLogFile::Printf("M2Online: %s", strModulePath.Get());
+	CLogFile::Printf("M2:MP: %s", strModulePath.Get());
 
 	if( !SharedUtility::Exists( strModulePath.Get() ) )
 	{
-		ShowMessageBox( "Failed to find m2online.dll! Can't launch." );
+		ShowMessageBox( "Failed to find m2mp.dll! Can't launch." );
 		return 1;
 	}
 

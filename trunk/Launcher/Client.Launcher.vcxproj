@@ -35,23 +35,25 @@
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="PropertySheet.props" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="PropertySheet.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <OutDir>$(SolutionDir)Binary\$(Configuration)\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <TargetName>m2online</TargetName>
+    <TargetName>$(SolutionName)</TargetName>
     <IntDir>$(SolutionDir)Objs\$(ProjectName)\$(Configuration)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <OutDir>$(SolutionDir)Binary\$(Configuration)\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <TargetName>m2online</TargetName>
+    <TargetName>$(SolutionName)</TargetName>
     <LinkIncremental>false</LinkIncremental>
     <IncludePath>$(IncludePath)</IncludePath>
     <LibraryPath>$(LibraryPath)</LibraryPath>
@@ -78,6 +80,11 @@
       </SubSystem>
       <MinimumRequiredVersion />
     </Link>
+    <PostBuildEvent>
+      <Command>copy /Y "$(SolutionDir)Binary\$(Configuration)\$(SolutionName)$(TargetExt)" "$(GAME_CLIENT_INSTALL_DIR)"
+copy /Y "$(SolutionDir)Binary\$(Configuration)\$(SolutionName).dll" "$(GAME_CLIENT_INSTALL_DIR)"
+copy /Y "$(SolutionDir)Binary\$(Configuration)\$(SolutionName).pdb" "$(GAME_CLIENT_INSTALL_DIR)"</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -102,6 +109,10 @@
       </SubSystem>
       <MinimumRequiredVersion />
     </Link>
+    <PostBuildEvent>
+      <Command>copy /Y "$(SolutionDir)Binary\$(Configuration)\$(SolutionName)$(TargetExt)" "$(GAME_CLIENT_INSTALL_DIR)"
+copy /Y "$(SolutionDir)Binary\$(Configuration)\$(SolutionName).dll" "$(GAME_CLIENT_INSTALL_DIR)"</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\Shared\CLogFile.cpp" />

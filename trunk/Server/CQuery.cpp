@@ -94,7 +94,7 @@ CQuery::~CQuery( void )
 std::string CQuery::QueryLight( void )
 {
 	std::stringstream reply;
-	reply << "M2Online";
+	reply << "M2:MP";
 
 	reply << ( unsigned char )( strlen( CVAR_GET_STRING( "hostname" ) ) + 1 );
 	reply << CVAR_GET_STRING( "hostname" );

@@ -112,7 +112,7 @@ bool CCore::Initialise( int argc, char * argv[] )
 
 	// Get the log file path and name
 	String strLogFile;
-	strLogFile.Format( "logs/%s/m2online-server-%d-%d-%d.log", szDateStr, tm->tm_mday, (tm->tm_mon + 1), (1900 + tm->tm_year) );
+	strLogFile.Format( "logs/%s/m2mp_ded-%d-%d-%d.log", szDateStr, tm->tm_mday, (tm->tm_mon + 1), (1900 + tm->tm_year) );
 
 	// Open the log file
 	CLogFile::Open( (char *)strLogFile.Get(), true );

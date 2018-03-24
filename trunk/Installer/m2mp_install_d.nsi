@@ -3,7 +3,7 @@
 
 !define MOD_NAME	"Mafia 2 Multiplayer"
 !define	MOD_VERS	"v0.1b"
-!define MOD_NAME_S	"M2MP"
+!define MOD_NAME_S	"M2:MP"
 !define MOD_OUTPUT	"m2mp-01b_d.exe"
 !define REG_NODE	"SOFTWARE\Wow6432Node\${MOD_NAME}"
 !define MOD_DIR 	"$PROGRAMFILES\${MOD_NAME}"
@@ -194,8 +194,8 @@ FunctionEnd
 
 Section "Uninstall"
 
-	Delete "${MOD_DIR}\m2online.exe"
-	Delete "${MOD_DIR}\m2online.dll"
+	Delete "${MOD_DIR}\m2mp.exe"
+	Delete "${MOD_DIR}\m2mp.dll"
 	Delete "$INSTDIR\..\sds\missionscript\freeraid_m2mp.sds"
 	Delete "$INSTDIR\..\..\edit\tables\StreamM2MP.bin"
 	RMDir /r "${MOD_DIR}"

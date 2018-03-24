@@ -104,7 +104,7 @@ bool CServerQuery::Query ( CServerListItem * pServerItem )
 	address.sin_port = htons ( pServerItem->usGamePort + 1 );
 	address.sin_addr.s_addr = inet_addr ( pServerItem->strHost.Get () );
 
-	int sentChars = sendto(m_iSocket, "M2Online", 8, NULL, (sockaddr *)&address, sizeof(sockaddr_in));
+	int sentChars = sendto(m_iSocket, "M2:MP", 8, NULL, (sockaddr *)&address, sizeof(sockaddr_in));
 	if ( sentChars == 8 )
 	{
 		pServerItem->ulQueryStart = SharedUtility::GetTime ();
