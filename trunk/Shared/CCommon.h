@@ -12,9 +12,9 @@
 // Core defines
 
 #ifdef _DEBUG
-#define		MOD_NAME				"Mafia2-Online - DEBUG MODE"
+#define		MOD_NAME				"M2:MP - DEBUG MODE"
 #else
-#define		MOD_NAME				"Mafia2-Online"
+#define		MOD_NAME				"M2:MP"
 #endif
 #define		MOD_VERS_STR			"0.1 RC4"
 

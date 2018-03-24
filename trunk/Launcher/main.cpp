@@ -38,6 +38,7 @@ int WINAPI WinMain( HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLin
 	bool bFoundCustomDirectory = false;
 	char szInstallDirectory[ MAX_PATH ];
 
+	// FIXME :: Change Registry Path once installer is sorted out
 	if( !SharedUtility::ReadRegistryString( HKEY_LOCAL_MACHINE, "Software\\Wow6432Node\\Mafia2-Online", "GameDir", NULL, szInstallDirectory, sizeof(szInstallDirectory) ) )
 	{
 		if( ShowMessageBox( "Failed to find Mafia II install directory. Do you want to select it now?", (MB_ICONEXCLAMATION | MB_YESNO) ) == IDYES )
@@ -80,8 +81,11 @@ int WINAPI WinMain( HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLin
 		return 1;
 	}
 
-	if( bFoundCustomDirectory )
-		SharedUtility::WriteRegistryString( HKEY_LOCAL_MACHINE, "Software\\Wow6432Node\\Mafia2-Online", "GameDir", szInstallDirectory, sizeof(szInstallDirectory) );
+	if (bFoundCustomDirectory)
+	{
+		// FIXME :: Change Registry Path once installer is sorted out
+		SharedUtility::WriteRegistryString(HKEY_LOCAL_MACHINE, "Software\\Wow6432Node\\Mafia2-Online", "GameDir", szInstallDirectory, sizeof(szInstallDirectory));
+	}
 
 	String strModulePath;
 	strModulePath.Format( "%s%s", SharedUtility::GetAppPath(), CORE_MODULE );
@@ -89,7 +93,7 @@ int WINAPI WinMain( HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLin
 
 	if( !SharedUtility::Exists( strModulePath.Get() ) )
 	{
-		ShowMessageBox( "Failed to find m2mp.dll! Can't launch." );
+		ShowMessageBox( "Failed to find " CORE_MODULE "! Can't launch." );
 		return 1;
 	}
 
