@@ -218,7 +218,7 @@ int main( int argc, char * argv[] )
 			m_inputMutex.unlock();
 		}
 
-		Sleep(5);
+		Sleep(10);
 	}
 	Shutdown ();
 	return 0;
