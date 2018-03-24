@@ -44,7 +44,7 @@
     <OutDir>$(SolutionDir)Binary\$(Configuration)\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <TargetName>$(SolutionName)_ded</TargetName>
+    <TargetName>$(SolutionName)_ded_d</TargetName>
     <LibraryPath>$(LibraryPath)</LibraryPath>
     <IntDir>$(SolutionDir)Objs\$(ProjectName)\$(Configuration)\</IntDir>
   </PropertyGroup>

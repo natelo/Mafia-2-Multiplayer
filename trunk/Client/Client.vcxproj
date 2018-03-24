@@ -35,9 +35,11 @@
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="PropertySheet.props" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="PropertySheet.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -45,7 +47,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <TargetExt>.dll</TargetExt>
-    <TargetName>$(SolutionName)</TargetName>
+    <TargetName>$(SolutionName)_d</TargetName>
     <LinkIncremental>
     </LinkIncremental>
     <IncludePath>$(ProjectDir)..\Libraries\DXSDK\Include;$(ProjectDir)..\Libraries\Detours;$(ProjectDir)..\Libraries\lua\Source;$(ProjectDir)..\Libraries\zlib-1.2.5;$(ProjectDir)..\Libraries\squirrel;$(IncludePath)</IncludePath>
@@ -81,7 +83,12 @@
       <TargetMachine>MachineX86</TargetMachine>
       <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
       <MinimumRequiredVersion />
+      <ProgramDatabaseFile>$(OutDir)$(TargetName)_dll.pdb</ProgramDatabaseFile>
     </Link>
+    <PostBuildEvent>
+      <Command>copy /Y "$(SolutionDir)Binary\$(Configuration)\$(TargetName)$(TargetExt)" "$(GAME_CLIENT_INSTALL_DIR)"
+copy /Y "$(SolutionDir)Binary\$(Configuration)\$(TargetName)_dll.pdb" "$(GAME_CLIENT_INSTALL_DIR)"</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -118,7 +125,11 @@
       <AdditionalLibraryDirectories>../Libraries/cegui-0.4.0-custom/lib;../Libraries/DXSDK/Lib;../Libraries/Detours;../Libraries/bass;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
       <MinimumRequiredVersion />
+      <ProgramDatabaseFile>$(OutDir)$(TargetName)_dll.pdb</ProgramDatabaseFile>
     </Link>
+    <PostBuildEvent>
+      <Command>copy /Y "$(SolutionDir)Binary\$(Configuration)\$(SolutionName)$(TargetExt)" "$(GAME_CLIENT_INSTALL_DIR)"</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="..\Libraries\lua\lauxlib.h" />

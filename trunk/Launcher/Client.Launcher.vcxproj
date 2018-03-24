@@ -53,7 +53,7 @@
     <OutDir>$(SolutionDir)Binary\$(Configuration)\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <TargetName>$(SolutionName)</TargetName>
+    <TargetName>$(SolutionName)_d</TargetName>
     <LinkIncremental>false</LinkIncremental>
     <IncludePath>$(IncludePath)</IncludePath>
     <LibraryPath>$(LibraryPath)</LibraryPath>
@@ -81,9 +81,8 @@
       <MinimumRequiredVersion />
     </Link>
     <PostBuildEvent>
-      <Command>copy /Y "$(SolutionDir)Binary\$(Configuration)\$(SolutionName)$(TargetExt)" "$(GAME_CLIENT_INSTALL_DIR)"
-copy /Y "$(SolutionDir)Binary\$(Configuration)\$(SolutionName).dll" "$(GAME_CLIENT_INSTALL_DIR)"
-copy /Y "$(SolutionDir)Binary\$(Configuration)\$(SolutionName).pdb" "$(GAME_CLIENT_INSTALL_DIR)"</Command>
+      <Command>copy /Y "$(SolutionDir)Binary\$(Configuration)\$(TargetName)$(TargetExt)" "$(GAME_CLIENT_INSTALL_DIR)"
+copy /Y "$(SolutionDir)Binary\$(Configuration)\$(TargetName).pdb" "$(GAME_CLIENT_INSTALL_DIR)"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -108,10 +107,11 @@ copy /Y "$(SolutionDir)Binary\$(Configuration)\$(SolutionName).pdb" "$(GAME_CLIE
       <SubSystem>
       </SubSystem>
       <MinimumRequiredVersion />
+      <AdditionalManifestDependencies>
+      </AdditionalManifestDependencies>
     </Link>
     <PostBuildEvent>
-      <Command>copy /Y "$(SolutionDir)Binary\$(Configuration)\$(SolutionName)$(TargetExt)" "$(GAME_CLIENT_INSTALL_DIR)"
-copy /Y "$(SolutionDir)Binary\$(Configuration)\$(SolutionName).dll" "$(GAME_CLIENT_INSTALL_DIR)"</Command>
+      <Command>copy /Y "$(SolutionDir)Binary\$(Configuration)\$(SolutionName)$(TargetExt)" "$(GAME_CLIENT_INSTALL_DIR)"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>

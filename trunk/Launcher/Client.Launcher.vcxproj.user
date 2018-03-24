@@ -3,5 +3,11 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LocalDebuggerWorkingDirectory>$(GAME_CLIENT_INSTALL_DIR)</LocalDebuggerWorkingDirectory>
     <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+    <LocalDebuggerCommand>$(GAME_CLIENT_INSTALL_DIR)\$(TargetName)$(TargetExt)</LocalDebuggerCommand>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LocalDebuggerWorkingDirectory>$(GAME_CLIENT_INSTALL_DIR)</LocalDebuggerWorkingDirectory>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+    <LocalDebuggerCommand>$(GAME_CLIENT_INSTALL_DIR)\$(TargetName)$(TargetExt)</LocalDebuggerCommand>
   </PropertyGroup>
 </Project>
