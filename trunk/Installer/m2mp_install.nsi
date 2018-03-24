@@ -195,7 +195,7 @@ Section "Install"
 	WriteRegStr HKLM "${REG_NODE}" "Version" "${MOD_VERS}"
 
 	# Write the URI scheme
-	WriteRegStr HKCR "m2" "" "Mafia2-Online Protocol"
+	WriteRegStr HKCR "m2" "" "M2:MP Protocol"
 	WriteRegStr HKCR "m2mp" "URL Protocol" ""
 	WriteRegStr HKCR "m2mp\DefaultIcon" "" "$\"$MODDIR\m2mp.exe$\",1"
 	WriteRegStr HKCR "m2mp\shell\open\command" "" "$\"$MODDIR\m2mp.exe$\" $\"-uri %1$\""

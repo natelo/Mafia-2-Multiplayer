@@ -219,7 +219,7 @@ bool CCore::Initialise( void )
 
 	if (!ExceptionHandler::Install(exceptionPath))
 	{
-		MessageBox(NULL, "Mafia2-Online", "Unable to initialize exception handler!", NULL);
+		MessageBox(NULL, "M2:MP", "Unable to initialize exception handler!", NULL);
 		return FALSE;
 	}
 
@@ -232,7 +232,7 @@ bool CCore::Initialise( void )
 	{
 		String strErrorMessage;
 		strErrorMessage.Format("Failed to calculate checksum of the Mafia2 executable.\nPath: %s", strExePath.Get());
-		MessageBox(NULL, strErrorMessage, "Mafia2-Online - Fatal error", MB_ICONERROR);
+		MessageBox(NULL, strErrorMessage, "M2:MultiPlayer - Fatal error", MB_ICONERROR);
 		return false;
 	}
 
@@ -240,7 +240,7 @@ bool CCore::Initialise( void )
 
 	if (SharedUtility::IsEXESignatureAllowed(pChecksum.GetChecksum()) == false)
 	{
-		if ( MessageBox ( NULL, "Invalid game version detected.\n\nCan't start Mafia 2 Online\n\nPlease contact Tyldar with your EXE Signature (In core file in logs directory)", "Mafia2-Online - Error", MB_OK|MB_ICONERROR ) == MB_OK ) {
+		if ( MessageBox ( NULL, "Invalid game version detected.\n\nCan't start Mafia 2 MultiPlayer\n\nPlease contact Tyldar with your EXE Signature (In core file in logs directory)", "M2:MP - Error", MB_OK|MB_ICONERROR ) == MB_OK ) {
 			ShellExecute ( NULL, "open", "http://forum.mafia2-online.com", NULL, NULL, SW_SHOWNORMAL );
 		}
 		return false;
@@ -249,8 +249,8 @@ bool CCore::Initialise( void )
 	if( !CGameFiles::CheckFiles() )
 	{
 		String errorMessage;
-		errorMessage.Format( "%s\n\nPlease reinstall Mafia 2 or Mafia2-Online", CGameFiles::GetLastError().Get() );
-		MessageBox( NULL, errorMessage, "Mafia2-Online - Error", MB_OK|MB_ICONERROR );
+		errorMessage.Format( "%s\n\nPlease reinstall Mafia 2 or M2:MultiPlayer", CGameFiles::GetLastError().Get() );
+		MessageBox( NULL, errorMessage, "M2:MP - Error", MB_OK|MB_ICONERROR );
 		return false;
 	}
 
@@ -274,7 +274,7 @@ bool CCore::Initialise( void )
 	m_pScreenshotManager = new CScreenShot;
 
 	if (m_pGraphics->IsUsingChipset()){
-		MessageBox(NULL, "Your game is currently starting on graphic chipset\n\nYou may encounter graphical problems thats not belong to M2-Online", "Mafia2-Online - Warning", MB_OK | MB_ICONWARNING);
+		MessageBox(NULL, "Your game is currently starting on graphic chipset\n\nYou may encounter graphical problems thats not belong to M2:MultiPlayer", "M2:MP - Warning", MB_OK | MB_ICONWARNING);
 		CLogFile::Print("[GFX] Using Intel chipset");
 	} else if (m_pGraphics->IsUsingAMD()){
 		CLogFile::Print("[GFX] Using AMD");
