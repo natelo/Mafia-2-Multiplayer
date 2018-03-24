@@ -155,6 +155,24 @@ void ConsoleInput( String strInput )
 	}
 }
 
+#ifdef WIN32
+BOOL WINAPI CtrlHandler(DWORD type)
+{
+	switch (type)
+	{
+	case CTRL_C_EVENT:
+	case CTRL_BREAK_EVENT:
+	case CTRL_CLOSE_EVENT:
+	case CTRL_LOGOFF_EVENT:
+	case CTRL_SHUTDOWN_EVENT:
+		pCore->SetActive(false);
+		return TRUE;
+	}
+	return FALSE;
+}
+#endif
+
+
 void InputThread()
 {
 	std::string		input;
@@ -217,6 +235,10 @@ int main( int argc, char * argv[] )
 			}
 			m_inputMutex.unlock();
 		}
+
+#ifdef WIN32
+		SetConsoleCtrlHandler(CtrlHandler, TRUE);
+#endif
 
 		Sleep(5);
 	}
