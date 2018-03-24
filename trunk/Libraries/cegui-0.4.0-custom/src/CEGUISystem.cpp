@@ -154,7 +154,7 @@ System::System(Renderer* renderer, ResourceProvider* resourceProvider,const utf8
 System::System(Renderer* renderer, ScriptModule* scriptModule, const utf8* configFile) :
 	d_clickTrackerPimpl(new MouseClickTrackerImpl)
 {
-    constructor_impl(renderer, NULL, NULL, scriptModule, configFile, (const utf8*)"CEGUI.log");
+    constructor_impl(renderer, NULL, NULL, scriptModule, configFile, (const utf8*)"logs/CEGUI.log");
 }
 
 
@@ -164,7 +164,7 @@ System::System(Renderer* renderer, ScriptModule* scriptModule, const utf8* confi
 System::System(Renderer* renderer, ScriptModule* scriptModule, ResourceProvider* resourceProvider, const utf8* configFile) :
 	d_clickTrackerPimpl(new MouseClickTrackerImpl)
 {
-    constructor_impl(renderer, resourceProvider, NULL, scriptModule, configFile, (const utf8*)"CEGUI.log");
+    constructor_impl(renderer, resourceProvider, NULL, scriptModule, configFile, (const utf8*)"logs/CEGUI.log");
 }
 
 /*************************************************************************
@@ -191,7 +191,7 @@ System::System(Renderer* renderer, ResourceProvider* resourceProvider, XMLParser
 System::System(Renderer* renderer, XMLParser* xmlParser, ScriptModule* scriptModule, const utf8* configFile) :
         d_clickTrackerPimpl(new MouseClickTrackerImpl)
 {
-    constructor_impl(renderer, NULL, xmlParser, scriptModule, configFile, (const utf8*)"CEGUI.log");
+    constructor_impl(renderer, NULL, xmlParser, scriptModule, configFile, (const utf8*)"logs/CEGUI.log");
 }
 
 /*************************************************************************
@@ -200,7 +200,7 @@ System::System(Renderer* renderer, XMLParser* xmlParser, ScriptModule* scriptMod
 System::System(Renderer* renderer, ResourceProvider* resourceProvider, XMLParser* xmlParser, ScriptModule* scriptModule, const utf8* configFile) :
         d_clickTrackerPimpl(new MouseClickTrackerImpl)
 {
-    constructor_impl(renderer, resourceProvider, xmlParser, scriptModule, configFile, (const utf8*)"CEGUI.log");
+    constructor_impl(renderer, resourceProvider, xmlParser, scriptModule, configFile, (const utf8*)"logs/CEGUI.log");
 }
 
 /*************************************************************************

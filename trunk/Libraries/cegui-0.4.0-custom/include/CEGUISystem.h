@@ -92,7 +92,7 @@ public:
 	\param logFile
 		pointer to a utf8 encoded buffer containing the name to use for the log file.
 	*/
-	System(Renderer* renderer, const utf8* logFile = (const utf8*)"CEGUI.log");
+	System(Renderer* renderer, const utf8* logFile = (const utf8*)"logs/CEGUI.log");
 
 	/*!
 	\brief
@@ -107,7 +107,7 @@ public:
 	\param logFile
 		pointer to a utf8 encoded buffer containing the name to use for the log file.
 	*/
-    System(Renderer* renderer, ResourceProvider* resourceProvider, const utf8* logFile = (const utf8*)"CEGUI.log");
+    System(Renderer* renderer, ResourceProvider* resourceProvider, const utf8* logFile = (const utf8*)"logs/CEGUI.log");
 
 
 	/*!
@@ -158,7 +158,7 @@ public:
     \param logFile
         pointer to a utf8 encoded buffer containing the name to use for the log file.
     */
-    System(Renderer* renderer, XMLParser* xmlParser, const utf8* logFile = (const utf8*)"CEGUI.log");
+    System(Renderer* renderer, XMLParser* xmlParser, const utf8* logFile = (const utf8*)"logs/CEGUI.log");
 
     
     /*!
@@ -177,7 +177,7 @@ public:
     \param logFile
         pointer to a utf8 encoded buffer containing the name to use for the log file.
     */
-    System(Renderer* renderer, ResourceProvider* resourceProvider, XMLParser* xmlParser, const utf8* logFile = (const utf8*)"CEGUI.log");
+    System(Renderer* renderer, ResourceProvider* resourceProvider, XMLParser* xmlParser, const utf8* logFile = (const utf8*)"logs/CEGUI.log");
 
     
     /*!
