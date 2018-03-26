@@ -9,7 +9,6 @@
  * $Author$
  * @file
  */
-#include "..\Shared\Common.h"
 
 class Core
 {
@@ -25,6 +24,4 @@ public:
 	void		Deinitialise(void);
 	void		SetActive(bool cActive)						{ c_gActive = cActive; }
 	bool		IsActive(void)								{ return c_gActive; }
-
-
 };

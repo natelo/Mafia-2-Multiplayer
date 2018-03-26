@@ -9,9 +9,6 @@
  * $Author$
  * @file
  */
-#include "Logs.h"
-#include "SharedUtility.h"
-
 #ifdef _WIN32
 #include	<windows.h>
 #include	<direct.h>
@@ -20,6 +17,10 @@
 #endif
 
 #include	<errno.h>
+
+#include "Logs.h"
+#include "SharedUtility.h"
+#include "Threading\CMutex.h"
 
 FILE 		*Logs::l_filePtr = NULL;
 bool 		Logs::l_logTime = true;
