@@ -10,8 +10,11 @@
  * @file
  */
 #include <Windows.h>
-#include "CCommon.h"
-#include "Core\Core.h"
+#include "win\win_local.h"
+#include "shared\shared.h"
+#include "server/server.h"
+
+svMain *pServer = NULL;
 
 /**
  * @fn	int main(int args, char *argv[])
@@ -26,26 +29,22 @@
  *
  * @return	Exit-code for the process - 0 for success, else an error code.
  */
-int main(int args, char *argv[]) {
+int main(int args, char *argv[]) {	
 
-	Core *pCore = new Core;
+	pServer = new svMain;
 
-	if (!pCore || !pCore->Initialise(args, argv))
+	if (!pServer || !pServer->Initialise(args, argv))
 	{
 		// Process terminating 
-#ifdef WIN32
 		TerminateProcess(GetCurrentProcess(), 0);
-#else
-		_exit(42);
-#endif
 	}
-
-	while (pCore->IsActive()) 
+	
+	while (pServer->isActive()) 
 	{		
 		
 	}
 
-	SAFE_DELETE(pCore);
+	SAFE_DELETE(pServer);
 
 	return 0;
 }
