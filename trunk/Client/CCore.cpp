@@ -281,7 +281,7 @@ bool CCore::Initialise( void )
 	} else if (m_pGraphics->IsUsingNVIDIA()){
 		CLogFile::Print("[GFX] Using NVIDIA");
 	} else {
-		CLogFile::Print("[GFX] Unknow graphic card");
+		CLogFile::Print("[GFX] Unknown graphic card");
 	}
 
 	return true;

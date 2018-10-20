@@ -321,7 +321,7 @@ CMenuSettings::CMenuSettings( CGUI_Impl * pGUI )
 	m_pRadioVolumeValue->SetPosition( Vector2( 230, 140 ) );
 
 	// Create username edit label
-	m_pM2OUsernameLabel = pGUI->CreateLabel("M2ONetwork Username :", NULL, m_pAuth.get());
+	m_pM2OUsernameLabel = pGUI->CreateLabel("M2:MP Username :", NULL, m_pAuth.get());
 	m_pM2OUsernameLabel->SetSize(Vector2(125, 25));
 	m_pM2OUsernameLabel->SetPosition(Vector2(15, 45));
 
@@ -332,7 +332,7 @@ CMenuSettings::CMenuSettings( CGUI_Impl * pGUI )
 	m_pM2OUsername->SetMaxLength(MAX_PLAYER_NAME);
 
 	// Create passwod edit label
-	m_pM2OPasswordLabel = pGUI->CreateLabel("M2ONetwork Password :", NULL, m_pAuth.get());
+	m_pM2OPasswordLabel = pGUI->CreateLabel("M2:MP Password :", NULL, m_pAuth.get());
 	m_pM2OPasswordLabel->SetSize(Vector2(125, 25));
 	m_pM2OPasswordLabel->SetPosition(Vector2(15, 75));
 
